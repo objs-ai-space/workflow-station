@@ -125,7 +125,7 @@ export default function Home() {
   const [instanceId, setInstanceId] = useState<string | null>(null);
   const [workflowStatus, setWorkflowStatus] = useState<WorkflowStatus | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [apiUrl, setApiUrl] = useState("http://localhost:8789");
+  const [apiUrl, setApiUrl] = useState("http://localhost:8788");
   const [instructionModes, setInstructionModes] = useState<("simple" | "conditional" | "endpoint" | "thread" | "router")[]>(["simple", "simple"]);
   const [concurrentWorkflows, setConcurrentWorkflows] = useState<WorkflowInstance[]>([]);
   const [showConcurrentView, setShowConcurrentView] = useState(false);
@@ -1201,7 +1201,7 @@ export default function Home() {
                 value={apiUrl}
                 onChange={(e) => setApiUrl(e.target.value)}
                 className="w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-md bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100"
-                placeholder="http://localhost:8789"
+                placeholder="http://localhost:8788"
               />
             </div>
 
